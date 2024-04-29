@@ -1,0 +1,143 @@
+* {
+	font-family: "Karla", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100svh;
+}
+
+.pricing-section__wrapper {
+	padding: 1.5rem;
+}
+
+.pricing-grid {
+	display: grid;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	max-width: 760px;
+	box-shadow: 4px 4px 12px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+.section__join-community {
+	padding: 1.5rem;
+	background-color: hsl(0, 0%, 100%);
+}
+
+.join-community__heading {
+	margin-bottom: 1.5rem;
+	color: hsl(179, 62%, 43%);
+}
+
+.join-community__description {
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+	color: hsl(71, 73%, 54%);
+}
+
+.join-community__benefits {
+	color: hsl(218, 22%, 67%);
+}
+
+.section__monthly-plan {
+	padding: 1.5rem;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(179, 62%, 43%);
+}
+
+.monthly-plan__heading {
+	margin-bottom: 1.5rem;
+}
+
+.monthly-plan__price {
+	color: hsl(204, 43%, 93%);
+}
+
+.monthly-plan__price span {
+	font-size: 2em;
+	font-weight: 700;
+	color: hsl(0, 0%, 100%);
+}
+
+.monthly-plan__detail {
+	margin-bottom: 1.5rem;
+}
+
+.monthly-plan__button {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.25em;
+	font-weight: 700;
+	padding: 0.75rem 0;
+	border-radius: 0.5rem;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(71, 73%, 54%);
+	box-shadow: 4px 4px 12px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+.section__why-choose-us {
+	padding: 1.5rem;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(179, 61%, 49%);
+}
+
+.why-choose-us__heading {
+	margin-bottom: 1.5rem;
+}
+
+.why-choose-us__benefits-list {
+	list-style: none;
+	padding: 0;
+}
+
+.why-choose-us__benefit-item {
+	color: hsl(204, 43%, 93%);
+}
+
+.attribution {
+	font-size: 14px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 720px) {
+	.pricing-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.section__join-community {
+		grid-column: 1 / 3;
+	}
+
+	.section__join-community,
+	.section__monthly-plan,
+	.section__why-choose-us {
+		padding: 2.5rem;
+	}
+
+	.join-community__heading {
+		font-size: 1.75em;
+	}
+
+	.join-community__description {
+		margin-bottom: 1rem;
+		font-size: 1.25em;
+	}
+
+	.join-community__benefits {
+		padding-right: 5rem;
+		font-size: 1.1em;
+	}
+
+	.monthly-plan__detail {
+		font-size: 1.25em;
+	}
+}
